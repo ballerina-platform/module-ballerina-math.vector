@@ -14,7 +14,7 @@
 // specific language governing permissions and limitations
 // under the License.
 
-enum normType {
+enum NormType {
     L1,
     L2
 }
@@ -30,9 +30,9 @@ enum normType {
 # + vector1 - float vector to operate on
 # + norm - norm type to calculate out of ["l1", "l2"]
 # + return - the l1 or l2 norm of the given float vector
-function vectorNorm(float[] vector1, normType norm) returns float {
+function vectorNorm(float[] vector1, NormType norm) returns float {
 
-    if norm == "L2" {
+    if norm == L2 {
         float magnitudeSquared = 0.0;
         foreach int i in 0 ..< vector1.length() {
             magnitudeSquared += (vector1[i]).pow(2);
@@ -84,8 +84,8 @@ function dotProduct(float[] vector1, float[] vector2) returns float {
 # + return - the cosine similarity between the given two vectors
 function cosineSimilarity(float[] vector1, float[] vector2) returns float {
 
-    float vector1Norm = vectorNorm(vector1, "L2");
-    float vector2Norm = vectorNorm(vector2, "L2");
+    float vector1Norm = vectorNorm(vector1, L2);
+    float vector2Norm = vectorNorm(vector2, L2);
 
     if vector1Norm == 0.0 || vector2Norm == 0.0 {
         panic error("Cosine similarity is undefined for zero vectors");
