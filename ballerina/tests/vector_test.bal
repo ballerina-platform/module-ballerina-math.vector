@@ -19,14 +19,14 @@ import ballerina/test;
 @test:Config {}
 isolated function testVectorNormL1() {
     float[] vector1 = [1.0, -2.5, 3.2, -6.8, 4.9];
-    float actualValue = vectorNorm(vector1, norm = "L1");
+    float actualValue = vectorNorm(vector1, L1);
     test:assertEquals(actualValue, 18.4, msg = "Float values are not equal");
 }
 
 @test:Config {}
 isolated function testVectorNormL2() {
     float[] vector1 = [1.0, -2.5, 3.2, -6.8, 4.9];
-    float actualValue = vectorNorm(vector1, norm = "L2"); 
+    float actualValue = vectorNorm(vector1, L2); 
     test:assertEquals(actualValue, 9.366963221877196, msg = "Float values are not equal");
 }
 

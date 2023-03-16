@@ -14,22 +14,25 @@
 // specific language governing permissions and limitations
 // under the License.
 
-enum NormType {
+# An enum containing the supported norm types.
+# L1 - L1 norm which is the sum of the absolute values of the vector elements
+# L2 - L2 norm which is the square root of the sum of the squared vector elements.
+public enum NormType {
     L1,
     L2
 }
 
-# Calculates the l1 and l2 norm of a float vector.
+# Calculates the L1 and L2 norm of a float vector.
 #
 # ```ballerina
 # float[] vector1 = [1.0, 2.0, 3.0];
-# vectorNorm(vector1, "l2") ⇒ 3.7416573867739413
-# vectorNorm(vector1, "l1") ⇒ 6.0
+# vectorNorm(vector1, vector:L2) ⇒ 3.7416573867739413
+# vectorNorm(vector1, vector:L1) ⇒ 6.0
 # ```
 #
 # + vector1 - float vector to operate on
-# + norm - norm type to calculate out of ["l1", "l2"]
-# + return - the l1 or l2 norm of the given float vector
+# + norm - norm type to calculate out of [L1, L2]
+# + return - the L1 or L2 norm of the given float vector
 function vectorNorm(float[] vector1, NormType norm) returns float {
 
     if norm == L2 {
