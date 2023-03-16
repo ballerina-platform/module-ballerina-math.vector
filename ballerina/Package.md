@@ -1,6 +1,6 @@
 ## Package overview
 
-This module provides functions for doing vector operations including calculating l1 and l2 norm, dot product, cosine similarity, euclidean distance and manhattan distance.
+This package provides functions for doing vector operations including calculating the `L1` and `L2` norm, dot product, cosine similarity, euclidean distance, and Manhattan distance.
 
 ## Report issues
 
