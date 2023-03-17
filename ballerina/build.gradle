@@ -60,7 +60,8 @@ ballerina {
     packageOrganization = packageOrg
     module = packageName
     langVersion = ballerinaLangVersion
-    testCoverageParam = "--code-coverage --coverage-format=xml --includes=ballerina.math.vector.*"
+    platform = "any"
+    testCoverageParam = "--code-coverage --coverage-format=xml"
 }
 
 task updateTomlFiles {
