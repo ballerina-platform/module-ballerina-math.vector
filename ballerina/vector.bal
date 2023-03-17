@@ -33,7 +33,7 @@ public enum NormType {
 # + v - float vector to operate on
 # + norm - norm type to calculate out of [L1, L2]
 # + return - the L1 or L2 norm of the given float vector
-function vectorNorm(float[] v, NormType norm) returns float {
+public isolated function vectorNorm(float[] v, NormType norm) returns float {
     if norm == L2 {
         float magnitudeSquared = 0.0;
         foreach int i in 0 ..< v.length() {
@@ -60,7 +60,7 @@ function vectorNorm(float[] v, NormType norm) returns float {
 # + v1 - float vector 1
 # + v2 - float vector 2
 # + return - the dot product of the given two vectors
-function dotProduct(float[] v1, float[] v2) returns float {
+public isolated function dotProduct(float[] v1, float[] v2) returns float {
     if v1.length() != v2.length() {
         panic error("The dot product can only be computed for two vectors of equal length.");
     } else {
@@ -83,7 +83,7 @@ function dotProduct(float[] v1, float[] v2) returns float {
 # + v1 - float vector 1
 # + v2 - float vector 2
 # + return - the cosine similarity between the given two vectors
-function cosineSimilarity(float[] v1, float[] v2) returns float {
+public isolated function cosineSimilarity(float[] v1, float[] v2) returns float {
     float vector1Norm = vectorNorm(v1, L2);
     float vector2Norm = vectorNorm(v2, L2);
 
@@ -105,7 +105,7 @@ function cosineSimilarity(float[] v1, float[] v2) returns float {
 # + v1 - float vector 1
 # + v2 - float vector 2
 # + return - the Euclidean distance between the given two vectors
-function euclideanDistance(float[] v1, float[] v2) returns float {
+public isolated function euclideanDistance(float[] v1, float[] v2) returns float {
     if v1.length() != v2.length() {
         panic error("The Euclidean distance can only be computed for two vectors of equal length.");
     } else {
@@ -128,7 +128,7 @@ function euclideanDistance(float[] v1, float[] v2) returns float {
 # + v1 - float vector 1
 # + v2 - float vector 2
 # + return - the Manhattan distance between the given two vectors
-function manhattanDistance(float[] v1, float[] v2) returns float {
+public isolated function manhattanDistance(float[] v1, float[] v2) returns float {
     if v1.length() != v2.length() {
         panic error("The Manhattan distance can only be computed for two vectors of equal length.");
     } else {
