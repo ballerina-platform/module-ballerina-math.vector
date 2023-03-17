@@ -18,46 +18,46 @@ import ballerina/test;
 
 @test:Config {}
 isolated function testVectorNormL1() {
-    float[] vector1 = [1.0, -2.5, 3.2, -6.8, 4.9];
-    float actualValue = vectorNorm(vector1, L1);
+    float[] v = [1.0, -2.5, 3.2, -6.8, 4.9];
+    float actualValue = vectorNorm(v, L1);
     test:assertEquals(actualValue, 18.4, msg = "Float values are not equal");
 }
 
 @test:Config {}
 isolated function testVectorNormL2() {
-    float[] vector1 = [1.0, -2.5, 3.2, -6.8, 4.9];
-    float actualValue = vectorNorm(vector1, L2); 
+    float[] v = [1.0, -2.5, 3.2, -6.8, 4.9];
+    float actualValue = vectorNorm(v, L2); 
     test:assertEquals(actualValue, 9.366963221877196, msg = "Float values are not equal");
 }
 
 @test:Config {}
 isolated function testDotProduct() {
-    float[] vector1 = [1.0, -2.5, 3.2, -6.8, 4.9];
-    float[] vector2 = [4.3, 0.8, -1.5, -9.6, 2.0];
-    float actualValue = dotProduct(vector1, vector2); 
+    float[] v1 = [1.0, -2.5, 3.2, -6.8, 4.9];
+    float[] v2 = [4.3, 0.8, -1.5, -9.6, 2.0];
+    float actualValue = dotProduct(v1, v2); 
     test:assertEquals(actualValue, 72.58, msg = "Float values are not equal");
 }
 
 @test:Config {}
 isolated function testCosineSimilarity() {
-    float[] vector1 = [1.0, -2.5, 3.2, -6.8, 4.9];
-    float[] vector2 = [4.3, 0.8, -1.5, -9.6, 2.0];
-    float actualValue = cosineSimilarity(vector1, vector2); 
+    float[] v1 = [1.0, -2.5, 3.2, -6.8, 4.9];
+    float[] v2 = [4.3, 0.8, -1.5, -9.6, 2.0];
+    float actualValue = cosineSimilarity(v1, v2); 
     test:assertEquals(actualValue, 0.7147025072290608, msg = "Float values are not equal");
 }
 
 @test:Config {}
 isolated function testEuclideanDistance() {
-    float[] vector1 = [1.0, -2.5, 3.2, -6.8, 4.9];
-    float[] vector2 = [4.3, 0.8, -1.5, -9.6, 2.0];
-    float actualValue = euclideanDistance(vector1, vector2); 
+    float[] v1 = [1.0, -2.5, 3.2, -6.8, 4.9];
+    float[] v2 = [4.3, 0.8, -1.5, -9.6, 2.0];
+    float actualValue = euclideanDistance(v1, v2); 
     test:assertEquals(actualValue, 7.753708789992052, msg = "Float values are not equal");
 }
 
 @test:Config {}
 isolated function testManhattanDistance() {
-    float[] vector1 = [1.0, -2.5, 3.2, -6.8, 4.9];
-    float[] vector2 = [4.3, 0.8, -1.5, -9.6, 2.0];
-    float actualValue = manhattanDistance(vector1, vector2); 
+    float[] v1 = [1.0, -2.5, 3.2, -6.8, 4.9];
+    float[] v2 = [4.3, 0.8, -1.5, -9.6, 2.0];
+    float actualValue = manhattanDistance(v1, v2); 
     test:assertEquals(actualValue, 17.0, msg = "Float values are not equal");
 }
