@@ -62,7 +62,7 @@ function vectorNorm(float[] v, NormType norm) returns float {
 # + return - the dot product of the given two vectors
 function dotProduct(float[] v1, float[] v2) returns float {
     if v1.length() != v2.length() {
-        panic error("The dot product can only be computed for two vectors of equal length");
+        panic error("The dot product can only be computed for two vectors of equal length.");
     } else {
         float dotProduct = 0.0;
         foreach int i in 0 ..< v1.length() {
@@ -88,13 +88,13 @@ function cosineSimilarity(float[] v1, float[] v2) returns float {
     float vector2Norm = vectorNorm(v2, L2);
 
     if vector1Norm == 0.0 || vector2Norm == 0.0 {
-        panic error("Cosine similarity is undefined for zero vectors");
+        panic error("Cosine similarity is undefined for zero vectors.");
     } else {
         return dotProduct(v1, v2) / (vector1Norm * vector2Norm);
     }
 }
 
-# Calculates the euclidean distance between two float vectors.
+# Calculates the Euclidean distance between two float vectors.
 #
 # ```ballerina
 # float[] v1 = [1.0, 2.0, 3.0];
@@ -104,10 +104,10 @@ function cosineSimilarity(float[] v1, float[] v2) returns float {
 #
 # + v1 - float vector 1
 # + v2 - float vector 2
-# + return - the euclidean distance between the given two vectors
+# + return - the Euclidean distance between the given two vectors
 function euclideanDistance(float[] v1, float[] v2) returns float {
     if v1.length() != v2.length() {
-        panic error("The euclidean distance can only be computed for two vectors of equal length");
+        panic error("The Euclidean distance can only be computed for two vectors of equal length.");
     } else {
         float differenceSquared = 0.0;
         foreach int i in 0 ..< v1.length() {
@@ -117,7 +117,7 @@ function euclideanDistance(float[] v1, float[] v2) returns float {
     }
 }
 
-# Calculates the manhattan distance between two float vectors.
+# Calculates the Manhattan distance between two float vectors.
 #
 # ```ballerina
 # float[] v1 = [1.0, 2.0, 3.0];
@@ -127,10 +127,10 @@ function euclideanDistance(float[] v1, float[] v2) returns float {
 #
 # + v1 - float vector 1
 # + v2 - float vector 2
-# + return - the manhattan distance between the given two vectors
+# + return - the Manhattan distance between the given two vectors
 function manhattanDistance(float[] v1, float[] v2) returns float {
     if v1.length() != v2.length() {
-        panic error("The manhattan distance can only be computed for two vectors of equal length");
+        panic error("The Manhattan distance can only be computed for two vectors of equal length.");
     } else {
         float absoluteDifference = 0.0;
         foreach int i in 0 ..< v1.length() {

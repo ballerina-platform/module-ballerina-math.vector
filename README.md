@@ -8,7 +8,7 @@ Ballerina `math vector` Library
   [![GitHub Last Commit](https://img.shields.io/github/last-commit/ballerina-platform/module-ballerina-math.vector.svg)](https://github.com/ballerina-platform/module-ballerina-math.vector/commits/main)
   [![Github issues](https://img.shields.io/github/issues/ballerina-platform/ballerina-standard-library/module/math.vector.svg?label=Open%20Issues)](https://github.com/ballerina-platform/ballerina-standard-library/labels/module%2Fmath.vector)
 
-This package provides functions for doing vector operations including calculating the `L1` and `L2` norm, dot product, cosine similarity, euclidean distance, and Manhattan distance.
+This package provides functions for doing vector operations including calculating the `L1` and `L2` norm, dot product, cosine similarity, Euclidean distance, and Manhattan distance.
 
 ## Issues and projects
 
