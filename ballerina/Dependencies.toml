@@ -15,7 +15,7 @@ scope = "testOnly"
 [[package]]
 org = "ballerina"
 name = "math.vector"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
 	{org = "ballerina", name = "test"}
 ]
