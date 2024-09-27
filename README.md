@@ -20,7 +20,7 @@ This repository contains only the source code of the package.
 
 ### Set up the prerequisites
 
-* Download and install Java SE Development Kit (JDK) version 11 (from one of the following locations).
+* Download and install Java SE Development Kit (JDK) version 21 (from one of the following locations).
 
    * [Oracle](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
    
