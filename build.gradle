@@ -58,6 +58,21 @@ allprojects {
     }
 }
 
+subprojects {
+
+    configurations {
+        ballerinaStdLibs
+        jbalTools
+    }
+
+    dependencies {
+        /* JBallerina Tools */
+        jbalTools ("org.ballerinalang:jballerina-tools:${ballerinaLangVersion}") {
+            transitive = false
+        }
+    }
+}
+
 def moduleVersion = project.version.replace("-SNAPSHOT", "")
 
 release {
