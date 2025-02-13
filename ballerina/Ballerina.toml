@@ -1,10 +1,10 @@
 [package]
 org = "ballerina"
 name = "math.vector"
-version = "1.0.3"
+version = "1.1.0"
 authors = ["Ballerina"]
 keywords = ["math", "vector", "distance"]
 repository = "https://github.com/ballerina-platform/module-ballerina-math.vector"
 icon = "icon.png"
 license = ["Apache-2.0"]
-distribution = "2201.5.0"
+distribution = "2201.11.0"
