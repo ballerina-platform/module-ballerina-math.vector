@@ -1,4 +1,4 @@
-Ballerina `math vector` Library
+Ballerina `math.vector` Library
 ==============================
 
 Overview

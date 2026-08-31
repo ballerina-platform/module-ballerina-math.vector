@@ -1,4 +1,4 @@
-Ballerina `math vector` Library
+Ballerina `math.vector` Library
 ==============================
 
   [![Build](https://github.com/ballerina-platform/module-ballerina-math.vector/actions/workflows/build-timestamped-master.yml/badge.svg)](https://github.com/ballerina-platform/module-ballerina-math.vector/actions/workflows/build-timestamped-master.yml)
