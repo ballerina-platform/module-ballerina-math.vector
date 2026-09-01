@@ -1,5 +1,3 @@
-# Ballerina `math.vector` Library
-
 ## Overview
 
 This package provides functions for doing vector operations including
