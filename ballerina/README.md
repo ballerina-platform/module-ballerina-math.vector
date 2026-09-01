@@ -1,15 +1,12 @@
-Ballerina `math.vector` Library
-==============================
+# Ballerina `math.vector` Library
 
-Overview
---------
+## Overview
 
 This package provides functions for doing vector operations including
 calculating the `L1` and `L2` norm, dot product, cosine similarity,
 Euclidean distance, and Manhattan distance.
 
-Key Features
-------------
+## Key Features
 
 - L1 and L2 norm calculation
 - Dot product calculation
