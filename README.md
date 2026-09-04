@@ -13,14 +13,6 @@ This package provides functions for doing vector operations including
 calculating the `L1` and `L2` norm, dot product, cosine similarity,
 Euclidean distance, and Manhattan distance.
 
-## Key Features
-
-- L1 and L2 norm calculation
-- Dot product calculation
-- Cosine similarity calculation
-- Euclidean distance calculation
-- Manhattan distance calculation
-
 ## Issues and projects
 
 The **Issues** and **Projects** tabs are disabled for this repository as this is part of the Ballerina Standard Library. To report bugs, request new features, start new discussions, view project boards, etc., go to the Ballerina Standard Library [parent repository](https://github.com/ballerina-platform/ballerina-standard-library). 
