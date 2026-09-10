@@ -1,9 +1,9 @@
 [package]
 org = "ballerina"
 name = "math.vector"
-version = "1.2.0"
+version = "1.2.1"
 authors = ["Ballerina"]
-keywords = ["math", "vector", "distance", "Type/Library", "Area/Built-in"]
+keywords = ["math", "vector", "distance", "Type/Library", "Area/Built-in", "Name/Math Vector"]
 repository = "https://github.com/ballerina-platform/module-ballerina-math.vector"
 icon = "icon.png"
 license = ["Apache-2.0"]
