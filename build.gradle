@@ -91,6 +91,14 @@ release {
     }
 }
 
-tasks.named('build') {
-    dependsOn('math.vector-ballerina:build')
+if (tasks.names.contains('build')) {
+    tasks.named('build') {
+        dependsOn('math.vector-ballerina:build')
+
+    }
+} else {
+    tasks.register('build') {
+        dependsOn('math.vector-ballerina:build')
+
+    }
 }
